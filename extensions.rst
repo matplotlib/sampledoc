@@ -61,7 +61,21 @@ ipython sessions
 ================
 
 Michael Droettboom contributed a sphinx extension which does pygments
-syntax highlighting on ipython sessions
+syntax highlighting on ipython sessions.  Just use ipython as the
+language in the sourcecode directive::
+
+    .. sourcecode:: ipython
+
+        In [69]: lines = plot([1,2,3])
+
+        In [70]: setp(lines)
+          alpha: float
+          animated: [True | False]
+          antialiased or aa: [True | False]
+          ...snip
+
+
+and you will get the syntax highlighted output below.
 
 .. sourcecode:: ipython
 
@@ -88,6 +102,19 @@ y\ x-y` or display math
 
   W^{3\beta}_{\delta_1 \rho_1 \sigma_2} = U^{3\beta}_{\delta_1 \rho_1} + \frac{1}{8 \pi 2} \int^{\alpha_2}_{\alpha_2} d \alpha^\prime_2 \left[\frac{ U^{2\beta}_{\delta_1 \rho_1} - \alpha^\prime_2U^{1\beta}_{\rho_1 \sigma_2} }{U^{0\beta}_{\rho_1 \sigma_2}}\right]
 
+To include math in your document, just use the math directive; here is
+a simpler equation::
+
+    .. math::
+
+      W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1} 
+
+which is rendered as 
+
+.. math::
+
+   W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1} 
+
 This documentation framework includes a Sphinx extension,
 :file:`sphinxext/mathmpl.py`, that uses matplotlib to render math
 equations when generating HTML, and LaTeX itself when generating a
@@ -108,7 +135,7 @@ To use these extensions instead, add ``sphinx.ext.pngmath`` or
 All three of these options for math are designed to behave in the same
 way.
 
-.. _emacs-helpers:
+.. _pyplots:
 
 Inserting matplotlib plots
 ==========================
@@ -128,6 +155,35 @@ version of the document, the plot is included as a scalable PDF.
 .. plot:: pyplots/ellipses.py
    :include-source:
 
+
+You can also inline simple plots, and the code will be executed at
+documentation build time and the figure inserted into your docs; the
+following code::
+
+   .. plot::
+
+      import matplotlib.pyplot as plt
+      import numpy as np
+      x = np.random.randn(1000)
+      plt.hist( x, 20)
+      plt.grid()
+      plt.title(r'Normal: $\mu=%.2f, \sigma=%.2f$'%(x.mean(), x.std()))
+      plt.show()
+
+produces this output:
+
+.. plot::
+
+    import matplotlib.pyplot as plt
+    import numpy as np
+    x = np.random.randn(1000)
+    plt.hist( x, 20)
+    plt.grid()
+    plt.title(r'Normal: $\mu=%.2f, \sigma=%.2f$'%(x.mean(), x.std()))
+    plt.show()
+
+
+  
 Inheritance diagrams
 ====================
 
