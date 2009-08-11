@@ -91,3 +91,9 @@ sf:
 	cd _build/html; \
 	rsync -avz . jdh2358,matplotlib@web.sf.net:/home/groups/m/ma/matplotlib/htdocs/sampledoc -essh --cvs-exclude
 
+
+sfpdf:
+	cd _build/latex; \
+	scp sampledoc.pdf jdh2358,matplotlib@web.sf.net:/home/groups/m/ma/matplotlib/htdocs/sampledoc/
+
+

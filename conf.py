@@ -46,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'sampledoc'
-copyright = u'2009, jdh'
+copyright = u'2009, John Hunter, Fernando Perez, Michael Droettboom'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -181,7 +181,7 @@ htmlhelp_basename = 'sampledocdoc'
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'sampledoc.tex', u'sampledoc Documentation',
-   u'jdh', 'manual'),
+   u'John Hunter, Fernando Perez, Michael Droettboom', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

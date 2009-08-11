@@ -37,7 +37,7 @@ anything, let's see if we can build some html::
   make html
 
 If you now point your browser to :file:`_build/html/index.html`, you
-should see a basic spinx site.
+should see a basic sphinx site.
 
 .. image:: _static/basic_screenshot.png
 
@@ -61,9 +61,8 @@ First, I'll cd to the directory containing my project, and get the
   home:~/tmp/sampledoc> pwd
   /Users/jdhunter/tmp/sampledoc
   home:~/tmp/sampledoc> cd ..
-  home:~/tmp> svn co
-  https://matplotlib.svn.sourceforge.net/svnroot/matplotlib/trunk/\
-    sampledoc_tut
+  home:~/tmp> svn co https://matplotlib.svn.sourceforge.net/svnroot/\
+  matplotlib/trunk/sampledoc_tut
   A    sampledoc_tut/cheatsheet.rst
   A    sampledoc_tut/_static
   A    sampledoc_tut/_static/basic_screenshot.png
@@ -75,7 +74,8 @@ First, I'll cd to the directory containing my project, and get the
   A    sampledoc_tut/index.rst
   Checked out revision 7449.
   home:~/tmp> cp sampledoc_tut/getting_started.rst sampledoc/
-  home:~/tmp> cp sampledoc_tut/_static/basic_screenshot.png sampledoc/_static/
+  home:~/tmp> cp sampledoc_tut/_static/basic_screenshot.png \
+  sampledoc/_static/
 
 Now we are ready to rebuild the docs.  We used the image directory to
 include to the screenshot above with::
