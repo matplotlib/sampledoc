@@ -7,17 +7,16 @@ sampledoc tutorial
 ==================
 
 This is a tutorial introduction to quickly get you up and running with
-your own sphinx documentation system.  We'll cover everything from
-installing sphinx, to customizing the look and feel, to using custom
-extensions for embedding plots, inheritance diagrams, syntax
-highlighted ipython sessions and more.  If you follow along the
-tutorial, you'll start with nothing and end up with this site -- it's
-the bootstrapping documentation tutorial that writes itself!
+your own sphinx documentation system.  We'll cover installing sphinx,
+customizing the look and feel, using custom extensions for embedding
+plots, inheritance diagrams, syntax highlighted ipython sessions and
+more.  If you follow along the tutorial, you'll start with nothing and
+end up with this site -- it's the bootstrapping documentation tutorial
+that writes itself!
 
 The source code for this tutorial lives in mpl svn (see
-:ref:`fetching-the-data`) and the `sampledoc PDF <sampledoc.pdf>`_
-
-Contents:
+:ref:`fetching-the-data`) and you can grab a harcopy of the the
+`sampledoc PDF <sampledoc.pdf>`_
 
 .. toctree::
    :maxdepth: 2

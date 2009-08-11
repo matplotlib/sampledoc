@@ -7,10 +7,10 @@ Customizing the look and feel of the site
 
 The `sphinx <http://sphinx.pocoo.org/>`_ site itself looks better than
 the sites created with the default css, so here we'll invoke TS Elliots'
-maxim "Talen imitates, but genius steals" and grab their css
+maxim "Talent imitates, but genius steals" and grab their css
 and part of their layout.  As before, you can either get the required
 files :file:`_static/default.css`, :file:`_templates:layout.html` and
-:file:`_static\logo.png` from the website or svn (see
+:file:`_static/logo.png` from the website or svn (see
 :ref:`fetching-the-data`).  Since I did a svn checkout before, I will
 just copy the stuff I need from there::
 

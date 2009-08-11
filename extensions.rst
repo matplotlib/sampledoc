@@ -13,7 +13,7 @@ sphinx doc directory, and there are other extensions written by other
 groups, eg numpy and ipython.  We're collecting these in this tutorial
 and showing you how to install and use them for your own project.
 First let's grab the python extension files from the :file:`sphinxext`
-directory from svn (see :ref:`fetching-the-data`, and install them in
+directory from svn (see :ref:`fetching-the-data`), and install them in
 our :file:`sampledoc` project :file:`sphinxext` directory::
 
     home:~/tmp/sampledoc> mkdir sphinxext
@@ -60,9 +60,10 @@ source for this file at :ref:`extensions-literal`.
 ipython sessions
 ================
 
-Michael Droettboom contributed a sphinx extension which does pygments
-syntax highlighting on ipython sessions.  Just use ipython as the
-language in the sourcecode directive::
+Michael Droettboom contributed a sphinx extension which does `pygments
+<http://pygments.org>`_ syntax highlighting on `ipython
+<http://ipython.scipy.org>`_ sessions.  Just use ipython as the
+language in the ``sourcecode`` directive::
 
     .. sourcecode:: ipython
 
@@ -135,6 +136,10 @@ To use these extensions instead, add ``sphinx.ext.pngmath`` or
 All three of these options for math are designed to behave in the same
 way.
 
+See the matplotlib `mathtext guide
+<http://matplotlib.sourceforge.net/users/mathtext.html>`_ for lots
+more information on writing mathematical expressions in matplotlib.
+
 .. _pyplots:
 
 Inserting matplotlib plots
@@ -183,6 +188,10 @@ produces this output:
     plt.show()
 
 
+See the matplotlib `pyplot tutorial
+<http://matplotlib.sourceforge.net/users/pyplot_tutorial.html>`_ and
+the `gallery <http://matplotlib.sourceforge.net/gallery.html>`_ for
+lots of examples of matplotlib plots.
   
 Inheritance diagrams
 ====================

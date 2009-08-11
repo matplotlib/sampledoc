@@ -55,8 +55,9 @@ or svn.  You will need :file:`getting_started.rst` and
 we'll just grab them one at a time, so you can learn what needs to be
 changed where.  Since we have more files to come, I'm going to grab
 the whole svn directory and just copy the files I need over for now.
-First, I'll cd to the directory containing my project, and get the
-"finished" product, and then copy in just the files I need::
+First, I'll cd up back into the directory containing my project, check
+out the "finished" product from svn, and then copy in just the files I
+need into my :file:`sampledoc` directory::
 
   home:~/tmp/sampledoc> pwd
   /Users/jdhunter/tmp/sampledoc
@@ -78,8 +79,8 @@ First, I'll cd to the directory containing my project, and get the
   sampledoc/_static/
 
 The last step is to modify :file:`index.rst` to include the
-getting_started file (be careful with the indentation, the
-"getting_started" should line up with the ':' in ``:maxdepth``::
+:file:`getting_started.rst` file (be careful with the indentation, the
+"g" in "getting_started" should line up with the ':' in ``:maxdepth``::
 
   Contents:
 
