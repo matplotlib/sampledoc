@@ -77,11 +77,6 @@ First, I'll cd to the directory containing my project, and get the
   home:~/tmp> cp sampledoc_tut/_static/basic_screenshot.png \
   sampledoc/_static/
 
-Now we are ready to rebuild the docs.  We used the image directory to
-include to the screenshot above with::
-
-  .. image:: _static/basic_screenshot.png
-
 The last step is to modify :file:`index.rst` to include the
 getting_started file (be careful with the indentation, the
 "getting_started" should line up with the ':' in ``:maxdepth``::
@@ -93,9 +88,21 @@ getting_started file (be careful with the indentation, the
 
      getting_started.rst
 
-and then rebuild the docs with ``make html``.  When you reload the
-page, you should see a link to the "Getting Started" docs, and in
-there this page with the screenshot.  `Voila!`
+and then rebuild the docs::
+
+  cd sampledoc
+  make html
+
+
+When you reload the page by refreshing your browser pointing to
+:file:`_build/html/index.html`, you should see a link to the
+"Getting Started" docs, and in there this page with the screenshot.
+`Voila!`
+
+Note we used the image directive to include to the screenshot above
+with::
+
+  .. image:: _static/basic_screenshot.png
 
 
 Next we'll customize the look and feel of our site to give it a logo,
