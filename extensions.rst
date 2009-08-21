@@ -26,7 +26,7 @@ our :file:`sampledoc` project :file:`sphinxext` directory::
 In addition to the builtin matplotlib extensions for embedding pyplot
 plots and rendering math with matplotlib's native math engine, we also
 have extensions for syntax highlighting ipython sessions, making
-inhertiance diagrams, and more.  
+inhertiance diagrams, and more.
 
 We need to inform sphinx of our new extensions in the :file:`conf.py`
 file by adding the following.  First we tell it where to find the extensions::
@@ -37,7 +37,7 @@ file by adding the following.  First we tell it where to find the extensions::
     sys.path.append(os.path.abspath('sphinxext'))
 
 And then we tell it what extensions to load::
- 
+
     # Add any Sphinx extension module names here, as strings. They can
     # be extensions coming with Sphinx (named 'sphinx.ext.*') or your
     # custom ones.
@@ -108,13 +108,13 @@ a simpler equation::
 
     .. math::
 
-      W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1} 
+      W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1}
 
-which is rendered as 
+which is rendered as
 
 .. math::
 
-   W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1} 
+   W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1}
 
 This documentation framework includes a Sphinx extension,
 :file:`sphinxext/mathmpl.py`, that uses matplotlib to render math
@@ -147,8 +147,18 @@ Inserting matplotlib plots
 
 Inserting automatically-generated plots is easy.  Simply put the
 script to generate the plot in the :file:`pyplots` directory, and
-refer to it using the ``plot`` directive.  To include the source code
-for the plot in the document, pass the ``include-source`` parameter::
+refer to it using the ``plot`` directive.  First make a
+:file:`pyplots` directory at the top level of your project (next to
+:``conf.py``) and copy the :file:`ellipses.py`` file into it::
+
+    home:~/tmp/sampledoc> mkdir pyplots
+    home:~/tmp/sampledoc> cp ../sampledoc_tut/pyplots/ellipses.py pyplots/
+
+
+You can refer to this file in your sphinx documentation; by default it
+will just inline the plot with links to the source and PF and high
+resolution PNGS.  To also include the source code for the plot in the
+document, pass the ``include-source`` parameter::
 
   .. plot:: pyplots/ellipses.py
      :include-source:
@@ -161,9 +171,9 @@ version of the document, the plot is included as a scalable PDF.
    :include-source:
 
 
-You can also inline simple plots, and the code will be executed at
-documentation build time and the figure inserted into your docs; the
-following code::
+You can also inline code for plots directly, and the code will be
+executed at documentation build time and the figure inserted into your
+docs; the following code::
 
    .. plot::
 
@@ -192,7 +202,7 @@ See the matplotlib `pyplot tutorial
 <http://matplotlib.sourceforge.net/users/pyplot_tutorial.html>`_ and
 the `gallery <http://matplotlib.sourceforge.net/gallery.html>`_ for
 lots of examples of matplotlib plots.
-  
+
 Inheritance diagrams
 ====================
 
