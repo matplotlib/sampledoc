@@ -199,7 +199,7 @@ settings to the entire block.  For example,
    mpl/examples/event_handling/   mpl/examples/widgets
 
    In [14]: cd mpl/examples/widgets/
-   /home/msierig/mpl/examples/widgets
+   /home/jdhunter/mpl/examples/widgets
 
    In [15]: !wc *
        2    12    77 README.txt
