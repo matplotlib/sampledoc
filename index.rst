@@ -24,6 +24,7 @@ The source code for this tutorial lives in mpl svn (see
    getting_started.rst
    custom_look.rst
    extensions.rst
+   ipython_directive.rst
    cheatsheet.rst
    emacs_help.rst
 

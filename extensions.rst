@@ -221,6 +221,11 @@ produces:
 
 .. _extensions-literal:
 
+
+See the :ref:`ipython_directive` for a tutorial on embedding stateful,
+matplotlib aware ipython sessions into your rest docs with multiline
+and doctest support.
+
 This file
 =========
 
