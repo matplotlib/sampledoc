@@ -1,5 +1,4 @@
 .. _extensions:
-<
 
 ****************************************************
 Sphinx extensions for embedded plots, math and more
