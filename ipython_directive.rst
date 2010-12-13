@@ -9,7 +9,16 @@ sphinx documents.  It knows about standard ipython prompts, and
 extracts the input and output lines.  These prompts will be renumbered
 starting at ``1``.  The inputs will be fed to an embedded ipython
 interpreter and the outputs from that interpreter will be inserted as
-well.
+well.  For example, code blocks like the following::
+
+  .. ipython::
+
+     In [136]: x = 2
+
+     In [137]: x**3
+     Out[137]: 8
+
+will be rendered as
 
 .. ipython::
 
@@ -17,6 +26,16 @@ well.
 
    In [137]: x**3
    Out[137]: 8
+
+.. note::
+    
+   This tutorial should be read side-by-side with the Sphinc source
+   for this document (see :ref:`ipython_literal`) because otherwise
+   you will see only the rendered output and not the code that
+   generated it.  Excepting the example above, we will not in general
+   be showing the liuteral rest in this document that generates the
+   rendered output.
+   
 
 The state from previous sessions is stored, and standard error is
 trapped.  At doc build time, ipython's output and std err will be
@@ -261,4 +280,10 @@ line just below them (eg ``savefig``).
     match. Also, can be applied to the entire ``..ipython`` block as a
     directive option with ``:doctest:``.
 
-That's all folks!
+.. _ipython_literal:
+
+Sphinx source for this tutorial
+====================================
+
+.. literalinclude:: ipython_directive.rst
+

@@ -17,7 +17,7 @@ installed -- you can check by doing::
 
 If that fails grab the latest version of and install it with::
 
-  > sudo easy_install sphinx
+  > sudo easy_install -U Sphinx
 
 Now you are ready to build a template for your docs, using
 sphinx-quickstart::

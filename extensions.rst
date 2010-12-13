@@ -1,5 +1,5 @@
 .. _extensions:
-
+<
 
 ****************************************************
 Sphinx extensions for embedded plots, math and more
@@ -19,9 +19,8 @@ our :file:`sampledoc` project :file:`sphinxext` directory::
     home:~/tmp/sampledoc> mkdir sphinxext
     home:~/tmp/sampledoc> cp ../sampledoc_tut/sphinxext/*.py sphinxext/
     home:~/tmp/sampledoc> ls sphinxext/
-    apigen.py             inheritance_diagram.py
-    docscrape.py          ipython_console_highlighting.py
-    docscrape_sphinx.py   numpydoc.py
+    apigen.py     docscrape_sphinx.py     ipython_console_highlighting.py
+    docscrape.py  inheritance_diagram.py  numpydoc.py
 
 In addition to the builtin matplotlib extensions for embedding pyplot
 plots and rendering math with matplotlib's native math engine, we also
@@ -41,15 +40,16 @@ And then we tell it what extensions to load::
     # Add any Sphinx extension module names here, as strings. They can
     # be extensions coming with Sphinx (named 'sphinx.ext.*') or your
     # custom ones.
-    extensions = ['matplotlib.sphinxext.mathmpl',
+    extensions = [
+              'matplotlib.sphinxext.mathmpl',
               'matplotlib.sphinxext.only_directives',
               'matplotlib.sphinxext.plot_directive',
+              'matplotlib.sphinxext.ipython_directive',
               'sphinx.ext.autodoc',
               'sphinx.ext.doctest',
               'ipython_console_highlighting',
               'inheritance_diagram',
               'numpydoc']
-
 
 Now let's look at some of these in action.  You can see the literal
 source for this file at :ref:`extensions-literal`.
