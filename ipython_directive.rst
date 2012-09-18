@@ -28,14 +28,14 @@ will be rendered as
    Out[137]: 8
 
 .. note::
-    
+
    This tutorial should be read side-by-side with the Sphinc source
    for this document (see :ref:`ipython_literal`) because otherwise
    you will see only the rendered output and not the code that
    generated it.  Excepting the example above, we will not in general
    be showing the liuteral rest in this document that generates the
    rendered output.
-   
+
 
 The state from previous sessions is stored, and standard error is
 trapped.  At doc build time, ipython's output and std err will be
@@ -118,7 +118,7 @@ suppress the seed line so it doesn't show up in the rendered output
    In [134]: numpy.random.seed(2358)
 
    @doctest
-   In [135]: np.random.rand(10,2)
+   In [135]: numpy.random.rand(10,2)
    Out[135]:
    array([[ 0.64524308,  0.59943846],
 	  [ 0.47102322,  0.8715456 ],
@@ -286,4 +286,3 @@ Sphinx source for this tutorial
 ====================================
 
 .. literalinclude:: ipython_directive.rst
-
