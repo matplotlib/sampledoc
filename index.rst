@@ -14,8 +14,8 @@ more.  If you follow along the tutorial, you'll start with nothing and
 end up with this site -- it's the bootstrapping documentation tutorial
 that writes itself!
 
-The source code for this tutorial lives in mpl svn (see
-:ref:`fetching-the-data`) and you can grab a harcopy of the the
+The source code for this tutorial lives in mpl git (see
+:ref:`fetching-the-data`) and you can grab a hardcopy of the
 `sampledoc PDF <sampledoc.pdf>`_
 
 .. toctree::

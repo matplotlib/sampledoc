@@ -12,7 +12,7 @@ sphinx doc directory, and there are other extensions written by other
 groups, eg numpy and ipython.  We're collecting these in this tutorial
 and showing you how to install and use them for your own project.
 First let's grab the python extension files from the :file:`sphinxext`
-directory from svn (see :ref:`fetching-the-data`), and install them in
+directory from git (see :ref:`fetching-the-data`), and install them in
 our :file:`sampledoc` project :file:`sphinxext` directory::
 
     home:~/tmp/sampledoc> mkdir sphinxext
