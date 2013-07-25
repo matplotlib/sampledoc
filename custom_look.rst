@@ -10,8 +10,8 @@ the sites created with the default css, so here we'll invoke T. S. Eliot's
 maxim "Talent imitates, but genius steals" and grab their css
 and part of their layout.  As before, you can either get the required
 files :file:`_static/default.css`, :file:`_templates/layout.html` and
-:file:`_static/logo.png` from the website or svn (see
-:ref:`fetching-the-data`).  Since I did a svn checkout before, I will
+:file:`_static/logo.png` from the website or git (see
+:ref:`fetching-the-data`).  Since I did a git clone before, I will
 just copy the stuff I need from there::
 
     home:~/tmp/sampledoc> cp ../sampledoc_tut/_static/default.css _static/
