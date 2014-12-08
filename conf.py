@@ -28,8 +28,8 @@ extensions = ['matplotlib.sphinxext.mathmpl',
               'matplotlib.sphinxext.ipython_directive',
               'sphinx.ext.autodoc',
               'sphinx.ext.doctest',
+              'sphinx.ext.inheritance_diagram',
               'ipython_console_highlighting',
-              'inheritance_diagram',
               'numpydoc']
 
 
