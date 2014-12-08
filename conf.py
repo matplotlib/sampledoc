@@ -25,7 +25,7 @@ sys.path.append(os.path.abspath('sphinxext'))
 extensions = ['matplotlib.sphinxext.mathmpl',
               'matplotlib.sphinxext.only_directives',
               'matplotlib.sphinxext.plot_directive',
-              'matplotlib.sphinxext.ipython_directive',
+              'IPython.sphinxext.ipython_directive',
               'sphinx.ext.autodoc',
               'sphinx.ext.doctest',
               'sphinx.ext.inheritance_diagram',
