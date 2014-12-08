@@ -34,21 +34,12 @@ file by adding the following.  First we tell it where to find the extensions::
     # os.path.abspath to make it absolute, like shown here.
     sys.path.append(os.path.abspath('sphinxext'))
 
-And then we tell it what extensions to load::
+And then we tell it what extensions to load:
 
-    # Add any Sphinx extension module names here, as strings. They can
-    # be extensions coming with Sphinx (named 'sphinx.ext.*') or your
-    # custom ones.
-    extensions = [
-              'matplotlib.sphinxext.mathmpl',
-              'matplotlib.sphinxext.only_directives',
-              'matplotlib.sphinxext.plot_directive',
-              'matplotlib.sphinxext.ipython_directive',
-              'sphinx.ext.autodoc',
-              'sphinx.ext.doctest',
-              'ipython_console_highlighting',
-              'inheritance_diagram',
-              'numpydoc']
+.. literalinclude:: conf.py
+    :language: python
+    :start-after: # this line tells sampledoc where the extensions begin
+    :end-before: # this line tells sampledoc where the extensions end
 
 Now let's look at some of these in action.  You can see the literal
 source for this file at :ref:`extensions-literal`.
@@ -115,25 +106,18 @@ which is rendered as
 
    W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1}
 
-This documentation framework includes a Sphinx extension,
-:file:`sphinxext/mathmpl.py`, that uses matplotlib to render math
-equations when generating HTML, and LaTeX itself when generating a
-PDF.  This can be useful on systems that have matplotlib, but not
-LaTeX, installed.  To use it, add ``mathmpl`` to the list of
-extensions in :file:`conf.py`.
+Recent versions of Sphinx include built-in support for math.
+There are three flavors:
 
-Current SVN versions of Sphinx now include built-in support for math.
-There are two flavors:
+  - sphinx.ext.pngmath: uses dvipng to render the equation
 
-  - pngmath: uses dvipng to render the equation
+  - sphinx.ext.mathjax: renders the math in the browser using Javascript
 
-  - jsmath: renders the math in the browser using Javascript
+  - sphinx.ext.jsmath: it's an older code, but it checks out
 
-To use these extensions instead, add ``sphinx.ext.pngmath`` or
-``sphinx.ext.jsmath`` to the list of extensions in :file:`conf.py`.
+Additionally, matplotlib has its own math support:
 
-All three of these options for math are designed to behave in the same
-way.
+  - matplotlib.sphinxext.mathmpl
 
 See the matplotlib `mathtext guide
 <http://matplotlib.sourceforge.net/users/mathtext.html>`_ for lots
