@@ -18,8 +18,7 @@ our :file:`sampledoc` project :file:`sphinxext` directory::
     home:~/tmp/sampledoc> mkdir sphinxext
     home:~/tmp/sampledoc> cp ../sampledoc_tut/sphinxext/*.py sphinxext/
     home:~/tmp/sampledoc> ls sphinxext/
-    apigen.py     docscrape_sphinx.py     ipython_console_highlighting.py
-    docscrape.py  inheritance_diagram.py  numpydoc.py
+    apigen.py  docscrape.py  docscrape_sphinx.py  numpydoc.py
 
 In addition to the builtin matplotlib extensions for embedding pyplot
 plots and rendering math with matplotlib's native math engine, we also
