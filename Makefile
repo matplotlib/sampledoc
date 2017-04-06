@@ -87,13 +87,8 @@ doctest:
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in _build/doctest/output.txt."
 
-sf:
-	cd _build/html; \
-	rsync -avz . jdh2358,matplotlib@web.sf.net:/home/groups/m/ma/matplotlib/htdocs/sampledoc -essh --cvs-exclude
+pdf: latex
+	cd _build/latex && make all-pdf
 
-
-sfpdf:
-	cd _build/latex; \
-	scp sampledoc.pdf jdh2358,matplotlib@web.sf.net:/home/groups/m/ma/matplotlib/htdocs/sampledoc/
-
-
+pdf-html: pdf html
+	cp _build/latex/sampledoc.pdf _build/html

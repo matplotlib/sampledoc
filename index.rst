@@ -15,8 +15,11 @@ end up with this site -- it's the bootstrapping documentation tutorial
 that writes itself!
 
 The source code for this tutorial lives in mpl git (see
-:ref:`fetching-the-data`) and you can grab a hardcopy of the
-`sampledoc PDF <sampledoc.pdf>`_
+:ref:`fetching-the-data`).
+
+.. only:: html
+
+    You can also grab a hardcopy of the `sampledoc PDF <sampledoc.pdf>`_
 
 .. toctree::
    :maxdepth: 2
