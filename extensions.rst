@@ -50,7 +50,6 @@ And then we tell it what extensions to load::
 Now let's look at some of these in action.  You can see the literal
 source for this file at :ref:`extensions-literal`.
 
-
 .. _ipython-highlighting:
 
 ipython sessions
@@ -126,7 +125,7 @@ Additionally, matplotlib has its own math support:
   - matplotlib.sphinxext.mathmpl
 
 See the matplotlib `mathtext guide
-<http://matplotlib.sourceforge.net/users/mathtext.html>`_ for lots
+<https://matplotlib.org/users/mathtext.html>`_ for lots
 more information on writing mathematical expressions in matplotlib.
 
 .. _pyplots:
@@ -188,8 +187,8 @@ produces this output:
 
 
 See the matplotlib `pyplot tutorial
-<http://matplotlib.sourceforge.net/users/pyplot_tutorial.html>`_ and
-the `gallery <http://matplotlib.sourceforge.net/gallery.html>`_ for
+<https://matplotlib.org/users/pyplot_tutorial.html>`_ and
+the `gallery <https://matplotlib.org/gallery.html>`_ for
 lots of examples of matplotlib plots.
 
 Inheritance diagrams
@@ -208,12 +207,11 @@ produces:
 .. inheritance-diagram:: codecs
 
 
-.. _extensions-literal:
-
-
 See the :ref:`ipython_directive` for a tutorial on embedding stateful,
 matplotlib aware ipython sessions into your rest docs with multiline
 and doctest support.
+
+.. _extensions-literal:
 
 This file
 =========
