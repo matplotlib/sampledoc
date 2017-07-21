@@ -33,7 +33,7 @@ will be rendered as
    for this document (see :ref:`ipython_literal`) because otherwise
    you will see only the rendered output and not the code that
    generated it.  Excepting the example above, we will not in general
-   be showing the literal ReST in this document that generates the
+   be showing the literal reST in this document that generates the
    rendered output.
 
 
@@ -128,27 +128,24 @@ Another demonstration of multi-line input and output
       ...:
 
 Most of the "pseudo-decorators" can be used as options to IPython
-mode.  For example, to setup ``matplotlib`` / ``pylab`` but suppress the output,
-you can do.  When using the matplotlib ``use`` directive, it should
-occur before any import of ``pylab``.  This will not show up in the
-rendered docs, but the commands will be executed in the embedded
-interpreter and subsequent line numbers will be incremented to reflect
-the inputs::
-
+mode.  For example, to setup ``matplotlib`` but suppress the output,
+you can do.  This will not show up in the rendered docs, but the commands
+will be executed in the embedded interpreter and subsequent line numbers
+will be incremented to reflect the inputs::
 
   .. ipython::
      :suppress:
 
-     In [1]: from pylab import *
+     In [1]: import matplotlib.pyplot as plt
 
-     In [2]: ion()
+     In [2]: plt.ion()
 
 .. ipython::
    :suppress:
 
-   In [1]: from pylab import *
+   In [1]: import matplotlib.pyplot as plt
 
-   In [2]: ion()
+   In [2]: plt.ion()
 
 Likewise, you can set the ``:doctest:`` or ``:verbatim:`` Sphinx options to
 apply these settings to the entire block.  For example,
@@ -190,23 +187,23 @@ You can create one or more plots and insert them with the
 .. ipython::
 
    @savefig plot_simple.png width=4in
-   In [1]: plot([1,2,3]);
+   In [1]: plt.plot([1,2,3]);
 
    # use a semicolon to suppress the output
    @savefig hist_simple.png width=4in
-   In [2]: hist(np.random.randn(10000), 100);
+   In [2]: plt.hist(np.random.randn(10000), 100);
 
 In a subsequent session, we can update the current figure with some
 text, and then resave
 
 .. ipython::
 
-   In [1]: ylabel('number')
+   In [1]: plt.ylabel('number')
 
-   In [2]: title('normal distribution')
+   In [2]: plt.title('normal distribution')
 
    @savefig hist_with_text.png width=4in align=center
-   In [3]: grid(True)
+   In [3]: plt.grid(True)
 
 Pseudo-Decorators
 =================
