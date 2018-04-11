@@ -54,6 +54,7 @@ moves the vertical navigation panels to the right side of the page::
     {% block sidebar2 %}{% endblock %}
 
 Lastly, we need to modify the html theme in :file:`sampledoc/conf.py`::
+
     html_theme = 'sphinxdoc'
 
 Once you rebuild the site with a ``make html`` and reload the page in your browser, you should see a fancier site that looks like this
