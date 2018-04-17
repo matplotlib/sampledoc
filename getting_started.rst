@@ -39,7 +39,7 @@ anything, let's see if we can build some html::
 If you now point your browser to :file:`_build/html/index.html`, you
 should see a basic sphinx site.
 
-.. image:: _static/new_basic_screenshot.png
+.. image:: _static/basic_screenshot.png
 
 .. _fetching-the-data:
 
@@ -49,7 +49,7 @@ Fetching the data
 Now we will start to customize out docs.  Grab a couple of files from
 the `web site <https://github.com/matplotlib/sampledoc>`_
 or git.  You will need :file:`getting_started.rst` and
-:file:`_static/new_basic_screenshot.png`.  All of the files live in the
+:file:`_static/basic_screenshot.png`.  All of the files live in the
 "completed" version of this tutorial, but since this is a tutorial,
 we'll just grab them one at a time, so you can learn what needs to be
 changed where.  Since we have more files to come, I'm going to grab
@@ -69,7 +69,7 @@ need into my :file:`sampledoc` directory::
   Unpacking objects: 100% (87/87), done.
   Checking connectivity... done
   home:~/tmp> cp tutorial/getting_started.rst sampledoc/
-  home:~/tmp> cp tutorial/_static/new_basic_screenshot.png sampledoc/_static/
+  home:~/tmp> cp tutorial/_static/basic_screenshot.png sampledoc/_static/
 
 The last step is to modify :file:`index.rst` to include the
 :file:`getting_started.rst` file (be careful with the indentation, the
@@ -97,7 +97,7 @@ We can also use the image directive in :file:`index.rst` to include to the scree
 with::
 
   .. image::
-     _static/new_basic_screenshot.png
+     _static/basic_screenshot.png
 
 
 Next we'll customize the look and feel of our site to give it a logo,
