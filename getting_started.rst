@@ -93,14 +93,14 @@ When you reload the page by refreshing your browser pointing to
 "Getting Started" docs, and in there this page with the screenshot.
 `Voila!`
 
-Note we used the image directive to include to the screenshot above
+We can also use the image directive in :file:`index.rst` to include to the screenshot above
 with::
 
-  .. image:: _static/basic_screenshot.png
+  .. image::
+     _static/basic_screenshot.png
 
 
 Next we'll customize the look and feel of our site to give it a logo,
 some custom css, and update the navigation panels to look more like
 the `sphinx <http://sphinx.pocoo.org/>`_ site itself -- see
 :ref:`custom_look`.
-
