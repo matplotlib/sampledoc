@@ -114,7 +114,7 @@ which is rendered as
 Recent versions of Sphinx include built-in support for math.
 There are three flavors:
 
-  - sphinx.ext.pngmath: uses dvipng to render the equation
+  - sphinx.ext.imgmath: uses dvipng to render the equation
 
   - sphinx.ext.mathjax: renders the math in the browser using Javascript
 
