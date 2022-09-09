@@ -82,8 +82,8 @@ document.
 
 You can also reference classes, modules, functions, etc that are
 documented using the sphinx `autodoc
-<http://sphinx.pocoo.org/ext/autodoc.html>`_ facilites.  For example,
-see the module :mod:`matplotlib.backend_bases` documentation, or the
+<https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html>`_ facilites.
+For example, see the module :mod:`matplotlib.backend_bases` documentation, or the
 class :class:`~matplotlib.backend_bases.LocationEvent`, or the method
 :meth:`~matplotlib.backend_bases.FigureCanvasBase.mpl_connect`.
 

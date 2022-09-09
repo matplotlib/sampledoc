@@ -37,8 +37,7 @@ And then we tell it what extensions to load::
 
     # Add any Sphinx extension module names here, as strings. They can be extensions
     # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-    extensions = ['matplotlib.sphinxext.only_directives',
-                  'matplotlib.sphinxext.plot_directive',
+    extensions = ['matplotlib.sphinxext.plot_directive',
                   'IPython.sphinxext.ipython_directive',
                   'IPython.sphinxext.ipython_console_highlighting',
                   'sphinx.ext.mathjax',
@@ -187,8 +186,8 @@ produces this output:
 
 
 See the matplotlib `pyplot tutorial
-<https://matplotlib.org/users/pyplot_tutorial.html>`_ and
-the `gallery <https://matplotlib.org/gallery.html>`_ for
+<https://matplotlib.org/stable/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py>`_
+and the `gallery <https://matplotlib.org/stable/gallery/index.html>`_ for
 lots of examples of matplotlib plots.
 
 Inheritance diagrams

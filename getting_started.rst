@@ -10,7 +10,7 @@ Getting started
 Installing your doc directory
 =============================
 
-You may already have sphinx `sphinx <http://sphinx.pocoo.org/>`_
+You may already have sphinx `sphinx <https://www.sphinx-doc.org/en/master/>`_
 installed -- you can check by doing::
 
   python -c 'import sphinx'
@@ -102,5 +102,5 @@ with::
 
 Next we'll customize the look and feel of our site to give it a logo,
 some custom css, and update the navigation panels to look more like
-the `sphinx <http://sphinx.pocoo.org/>`_ site itself -- see
+the `sphinx <https://www.sphinx-doc.org/en/master/>`_ site itself -- see
 :ref:`custom_look`.

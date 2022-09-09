@@ -44,6 +44,7 @@ be renumbered in the rendered docs, and pick up where the block above
 left off.
 
 .. ipython::
+  :okexcept:
 
   In [1]: z = x * 3  # x is recalled from previous block
 

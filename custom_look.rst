@@ -5,7 +5,7 @@
 Customizing the look and feel of the site
 ******************************************
 
-The `sphinx <http://www.sphinx-doc.org>`_ site itself looks better than
+The `sphinx <https://www.sphinx-doc.org/en/master/>`_ site itself looks better than
 the sites created with the default css, so here we'll
 invoke T. S. Eliot's maxim "Talent imitates, but genius steals" and
 grab their css and part of their layout.  As before, you can either
